@@ -1,65 +1,81 @@
+<div class="row my-4 bg-white">
+  <div class="col-2">
 
-<div class="row my-4 bg-white"> 
-    <div class="col-2">
-      
-    </div>
-    <div class="col-2">
-      <img title="Buy Headphones" class="d-block w-100 h-200px border round-corner" src="assets/images/pexels-garrettmorrow-1649771.jpg" alt="First slide">
-    </div>
-    <div class="col-2">
-      <img title="Buy Clothes" class="d-block w-100 h-200px border round-corner" src="assets/images/pexels-dom-j-7304-45982.jpg" alt="First slide">
-    </div>
-    <div class="col-2">
-      <img title="Buy Smartphones" class="d-block w-100 h-200px border round-corner" src="assets/images/pexels-jessbaileydesign-788946.jpg" alt="First slide">
-    </div>
-    <div class="col-2">
-      <img title="Buy Laptops and Desktops" class="d-block w-100 h-200px border round-corner" src="assets/images/pexels-tuurt-812264.jpg" alt="First slide">
-    </div>
-    <div class="col-2">
-      
-    </div>  
+  </div>
+  <div class="col-2">
+    <a href="/product-list">
+      <img title="Buy Headphones" class="d-block w-100 h-200px border round-corner"
+        src="assets/images/pexels-garrettmorrow-1649771.jpg" alt="First slide">
+        <p class="text-center">Headphones</p>
+    </a>
+  </div>
+  <div class="col-2">
+    <a href="/product-list">
+      <img title="Buy Clothes" class="d-block w-100 h-200px border round-corner"
+        src="assets/images/pexels-dom-j-7304-45982.jpg" alt="First slide">
+        <p class="text-center">Clothes</p>
+    </a>
+  </div>
+  <div class="col-2">
+    <a href="/product-list">
+      <img title="Buy Smartphones" class="d-block w-100 h-200px border round-corner"
+        src="assets/images/pexels-jessbaileydesign-788946.jpg" alt="First slide">
+      <p class="text-center">Smartphones</p>
+    </a>
+    
+  </div>
+  <div class="col-2">
+    <a href="/product-list">
+      <img title="Buy Laptops and Desktops" class="d-block w-100 h-200px border round-corner"
+        src="assets/images/pexels-tuurt-812264.jpg" alt="First slide">
+        <p class="text-center">Laptops and Desktops</p>
+    </a>
+  </div>
+  <div class="col-2">
+
+  </div>
 </div>
 
 
 <!--Carosel Start-->
 <div class="my-2 bg-dark">
-@if (images) {
+  @if (images) {
 
-<div class="text-center w-100">
-  <ngb-carousel>
-    <ng-template ngbSlide>
-      <div class="picsum-img-wrapper">
-        <img [src]="images[0]" alt="Random first slide" />
-      </div>
-      <div class="carousel-caption">
-        <h3>First slide label</h3>
-        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-      </div>
-    </ng-template>
-    <ng-template ngbSlide>
-      <div class="picsum-img-wrapper">
-        <img [src]="images[1]" alt="Random second slide" />
-      </div>
-      <div class="carousel-caption">
-        <h3>Second slide label</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-    </ng-template>
-    <ng-template ngbSlide>
-      <div class="picsum-img-wrapper">
-        <img [src]="images[2]" alt="Random third slide" />
-      </div>
-      <div class="carousel-caption">
-        <h3>Third slide label</h3>
-        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-      </div>
-    </ng-template>
-  </ngb-carousel>
-</div>
-}
+  <div class="text-center w-100">
+    <ngb-carousel>
+      <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+          <img [src]="images[0]" alt="Random first slide" />
+        </div>
+        <div class="carousel-caption">
+          <h3>First slide label</h3>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+          <img [src]="images[1]" alt="Random second slide" />
+        </div>
+        <div class="carousel-caption">
+          <h3>Second slide label</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+          <img [src]="images[2]" alt="Random third slide" />
+        </div>
+        <div class="carousel-caption">
+          <h3>Third slide label</h3>
+          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+        </div>
+      </ng-template>
+    </ngb-carousel>
+  </div>
+  }
 </div>
 <!--Carosel End-->
 
 
-<div class="my-2 bg-white h-200px"> 
+<div class="my-2 bg-white h-200px">
 </div>
