@@ -1,0 +1,19 @@
+.h-100px
+{
+    height: 200px;
+}
+
+.h-200px
+{
+    height: 200px;
+}
+
+.border:hover
+{
+    border: 5px solid blue !important;
+}
+
+.round-corner
+{
+    border-radius: 10px;
+}   
