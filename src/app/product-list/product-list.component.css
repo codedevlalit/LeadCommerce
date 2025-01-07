@@ -1,0 +1,9 @@
+.border:hover
+{
+    border: 5px solid blue !important;
+}
+
+.round-corner
+{
+    border-radius: 10px;
+}   
