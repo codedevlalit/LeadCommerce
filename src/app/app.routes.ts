@@ -6,6 +6,6 @@ import { AboutUsComponent } from './about-us/about-us.component';
 export const routes: Routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' },
     { path: 'home', component: HomeComponent },
-    { path: 'product-list', component: ProductListComponent },
+    { path: 'product-list/:category', component: ProductListComponent },
     { path: 'about-us', component: AboutUsComponent },
 ];
