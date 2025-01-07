@@ -19,6 +19,9 @@ ng --version
 ```
 19.0.6
 
+```bash
+ng g c about-us(component_name)
+```
 
 Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
