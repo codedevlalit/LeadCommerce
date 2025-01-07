@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-product-list',
@@ -8,6 +9,43 @@ import { Component } from '@angular/core';
 })
 export class ProductListComponent {
 
-  items = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ];
+  category: string = '';
+  items = [{ id: 1, src: `assets/images/${this.category}`, title: 'Product 1', price: 100 }];
+
+  constructor(private route: ActivatedRoute) {
+
+  }
+
+  ngOnInit() {
+
+    this.route.params.subscribe(params => { this.category = params['category']; });
+    
+  }
+
+  ngDoCheck() 
+  {
+    this.loadproducts();    
+  }
+
+  ngOnDestroy() 
+  {
+    
+  }
+
+  loadproducts() 
+  {
+    this.items = [
+      { id: 1, src: `assets/images/${this.category}`, title: 'Product 1', price: 100 },
+      { id: 2, src: `assets/images/${this.category}`, title: 'Product 1', price: 100 },
+      { id: 3, src: `assets/images/${this.category}`, title: 'Product 1', price: 100 },
+      { id: 4, src: `assets/images/${this.category}`, title: 'Product 1', price: 100 },
+      { id: 5, src: `assets/images/${this.category}`, title: 'Product 1', price: 100 },
+      { id: 6, src: `assets/images/${this.category}`, title: 'Product 1', price: 100 },
+      { id: 7, src: `assets/images/${this.category}`, title: 'Product 1', price: 100 },
+      { id: 8, src: `assets/images/${this.category}`, title: 'Product 1', price: 100 },
+      { id: 8, src: `assets/images/${this.category}`, title: 'Product 1', price: 100 },
+      { id: 10, src: `assets/images/${this.category}`, title: 'Product 1', price: 100 },
+    ];
+  }
 
 }
