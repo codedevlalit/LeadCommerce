@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-product-list',
@@ -12,7 +12,7 @@ export class ProductListComponent {
   category: string = '';
   items = [{ id: 1, src: `assets/images/${this.category}`, title: 'Product 1', price: 100 }];
 
-  constructor(private route: ActivatedRoute) {
+  constructor(private route: ActivatedRoute, private router: Router) {
 
   }
 
@@ -46,6 +46,13 @@ export class ProductListComponent {
       { id: 8, src: `assets/images/${this.category}`, title: 'Product 1', price: 100 },
       { id: 10, src: `assets/images/${this.category}`, title: 'Product 1', price: 100 },
     ];
+  }
+
+  onSelect(item: any)  
+  {
+    debugger;
+    this.router.navigate(['/product', item.src]);  
+
   }
 
 }
