@@ -74,3 +74,6 @@ For more information on using the Angular CLI, including detailed command refere
 ## Angular LifeCycle hooks
 
 https://www.c-sharpcorner.com/article/understanding-the-angular-lifecycle-hooks/
+
+## Angular icons
+https://ng-icons.github.io/ng-icons/#/browse-icons
