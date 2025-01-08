@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "import-icon": "npm install @ng-icons/core"
   },
   "private": true,
   "dependencies": {
@@ -23,6 +24,7 @@
     "@ng-icons/core": "^30.2.0",
     "@ng-icons/feather-icons": "^30.2.0",
     "@ng-icons/heroicons": "^30.2.0",
+    "@ng-icons/ionicons": "^30.2.0",
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",
