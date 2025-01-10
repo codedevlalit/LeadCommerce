@@ -1,8 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { NgIcon, provideIcons } from '@ng-icons/core';
-import { bootstrapCart } from '@ng-icons/bootstrap-icons';
-import {bootstrapPersonCircle} from '@ng-icons/bootstrap-icons';
+import { bootstrapCart, bootstrapPersonCircle } from '@ng-icons/bootstrap-icons';
 
 @Component({
   imports: [ RouterModule, NgIcon],
