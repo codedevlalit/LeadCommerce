@@ -7,6 +7,7 @@ import { CartComponent } from './cart/cart.component';
 import { SignupComponent } from './authentication/signup/signup.component';
 import { ForgetPasswordComponent } from './authentication/forget-password/forget-password.component';
 import { OrdersComponent } from './orders/orders.component';
+import { LoginComponent } from './authentication/login/login.component';
 
 
 // Define the routes
@@ -22,5 +23,6 @@ export const routes: Routes = [
     { path: 'about-us', component: AboutUsComponent },
     { path: 'cart', component: CartComponent },
     { path: 'orders', component: OrdersComponent },
+    { path: 'login', component:LoginComponent}
   
 ];
