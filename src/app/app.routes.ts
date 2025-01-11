@@ -4,9 +4,17 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ProductComponent } from './product/product.component';
 import { CartComponent } from './cart/cart.component';
+import { SignupComponent } from './authentication/signup/signup.component';
+import { ForgetPasswordComponent } from './authentication/forget-password/forget-password.component';
 import { OrdersComponent } from './orders/orders.component';
 
+
+// Define the routes
 export const routes: Routes = [
+
+    { path: 'sign-up', component: SignupComponent },
+    { path: 'forget-password', component: ForgetPasswordComponent },
+    
     { path: '', redirectTo: '/home', pathMatch: 'full' },
     { path: 'home', component: HomeComponent },
     { path: 'product-list/:category', component: ProductListComponent },
