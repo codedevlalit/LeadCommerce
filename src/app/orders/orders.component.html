@@ -1,0 +1,152 @@
+<style>
+    .order-history {
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        margin: 20px auto;
+        max-width: 800px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .order-history h1 {
+        color: #444;
+        text-align: center;
+        padding: 20px;
+        background-color: #f7f7f7;
+        border-bottom: 1px solid #ddd;
+        margin: 0;
+    }
+
+    .order-history table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .order-history th, .order-history td {
+        border: 1px solid #ddd;
+        padding: 12px 15px;
+        text-align: left;
+    }
+
+    .order-history th {
+        background-color: #f7f7f7;
+        color: #555;
+        font-weight: bold;
+    }
+
+    .order-history tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+    .order-history tr:hover {
+        background-color: #f1f1f1;
+    }
+
+    .order-history td {
+        color: #666;
+    }
+
+    .product-image-placeholder {
+        width: 50px;
+        height: 50px;
+        background-color: #ddd;
+        border-radius: 8px;
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    .product-details {
+        display: flex;
+        align-items: center;
+    }
+
+    .product-name {
+        font-weight: bold;
+    }
+
+    .product-description {
+        color: #888;
+        font-size: 0.9em;
+    }
+</style>
+
+<div class="order-history">
+    <h1>Order History</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Purchase Date</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <div class="product-details">
+                        <div class="product-image-placeholder"></div>
+                        <div>
+                            <div class="product-name">Product 1</div>
+                            <div class="product-description">Description of Product 1</div>
+                        </div>
+                    </div>
+                </td>
+                <td>2023-01-01</td>
+                <td>$100</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="product-details">
+                        <div class="product-image-placeholder"></div>
+                        <div>
+                            <div class="product-name">Product 2</div>
+                            <div class="product-description">Description of Product 2</div>
+                        </div>
+                    </div>
+                </td>
+                <td>2023-02-15</td>
+                <td>$150</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="product-details">
+                        <div class="product-image-placeholder"></div>
+                        <div>
+                            <div class="product-name">Product 3</div>
+                            <div class="product-description">Description of Product 3</div>
+                        </div>
+                    </div>
+                </td>
+                <td>2023-03-10</td>
+                <td>$200</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="product-details">
+                        <div class="product-image-placeholder"></div>
+                        <div>
+                            <div class="product-name">Product 4</div>
+                            <div class="product-description">Description of Product 4</div>
+                        </div>
+                    </div>
+                </td>
+                <td>2023-04-05</td>
+                <td>$250</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="product-details">
+                        <div class="product-image-placeholder"></div>
+                        <div>
+                            <div class="product-name">Product 5</div>
+                            <div class="product-description">Description of Product 5</div>
+                        </div>
+                    </div>
+                </td>
+                <td>2023-05-20</td>
+                <td>$300</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
