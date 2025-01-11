@@ -6,6 +6,8 @@ import { ProductComponent } from './product/product.component';
 import { CartComponent } from './cart/cart.component';
 import { SignupComponent } from './authentication/signup/signup.component';
 import { ForgetPasswordComponent } from './authentication/forget-password/forget-password.component';
+import { OrdersComponent } from './orders/orders.component';
+
 
 // Define the routes
 export const routes: Routes = [
@@ -19,5 +21,6 @@ export const routes: Routes = [
     { path: 'product/:identification', component: ProductComponent },
     { path: 'about-us', component: AboutUsComponent },
     { path: 'cart', component: CartComponent },
+    { path: 'orders', component: OrdersComponent },
   
 ];
