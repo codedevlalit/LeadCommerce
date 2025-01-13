@@ -15,7 +15,8 @@ export const routes: Routes = [
 
     { path: 'sign-up', component: SignupComponent },
     { path: 'forget-password', component: ForgetPasswordComponent },
-    
+    { path: 'login', component:LoginComponent},
+
     { path: '', redirectTo: '/home', pathMatch: 'full' },
     { path: 'home', component: HomeComponent },
     { path: 'product-list/:category', component: ProductListComponent },
@@ -23,6 +24,6 @@ export const routes: Routes = [
     { path: 'about-us', component: AboutUsComponent },
     { path: 'cart', component: CartComponent },
     { path: 'orders', component: OrdersComponent },
-    { path: 'login', component:LoginComponent}
+
   
 ];

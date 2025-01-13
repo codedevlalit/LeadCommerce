@@ -11,7 +11,7 @@ import { FormsModule } from '@angular/forms';
 })
 export class LoginComponent {
 
-  emailOrPhoneNumberText: any = '';
+  emailOrPhoneNumberText: string = '';
   otp: string = '';
   isOtpvisible: boolean = false;
 
