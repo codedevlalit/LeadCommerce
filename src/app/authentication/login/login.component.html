@@ -1,22 +1,32 @@
-<div class="modal modal-sheet position-static d-block bg-body-secondary p-4 py-md-5" tabindex="-1" role="dialog" id="modalSignin">
+<div class="modal modal-sheet position-static d-block bg-body-secondary p-4 py-md-5"
+ tabindex="-1" role="dialog" id="modalSignin">
     <div class="modal-dialog" role="document">
       <div class="modal-content rounded-4 shadow">
         <div class="modal-header p-5 pb-4 border-bottom-0">
-          <h1 class="fw-bold mb-0 fs-2">Login/Sign Up on <b>shoping-site</b></h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" fdprocessedid="k8742e"></button>
+          <h1 class="fw-bold mb-0 fs-2">Login</h1>
+          <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" fdprocessedid="k8742e"></button> -->
         </div>
   
         <div class="modal-body p-5 pt-0">
           <form class="">
-            <div class="form-floating mb-3">
-              <input type="email" class="form-control rounded-3" id="floatingInput" placeholder="name@example.com" fdprocessedid="4scdrn">
-              <label for="floatingInput">Email address</label>
-            </div>
-            <div class="form-floating mb-3">
-              <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Password" fdprocessedid="f92tbu">
-              <label for="floatingPassword">Password</label>
-            </div>
-            <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit" fdprocessedid="79kcmr">Sign up</button>
+           
+            @if (isOtpvisible === false) 
+            {
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control rounded-3" id="emailOrPhoneNumberText" name="emailOrPhoneNumberText"
+                 placeholder="name@example.com" [value]="emailOrPhoneNumberText" fdprocessedid="4scdrn">
+                <label for="emailOrPhoneNumberText">Email address or Phone number</label>
+              </div>
+            }
+            @else
+            {
+              <div class="form-floating mb-3">
+                <input type="number" class="form-control rounded-3" id="floatingPassword" placeholder="Password" fdprocessedid="f92tbu">
+                <label for="floatingPassword">One time password</label>
+              </div>
+            }
+           
+            <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit" fdprocessedid="79kcmr" (click)="onContinueButtonClicked()">Continue</button>
             <small class="text-body-secondary">By clicking Sign up, you agree to the terms of use.</small>
             <hr class="my-4">
             <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
