@@ -18,14 +18,22 @@
                       id="emailOrPhoneNumberText"
                       name="emailOrPhoneNumberText"
                       placeholder="name@example.com"
-                      [(ngModel)]="emailOrPhoneNumberText" fdprocessedid="4scdrn">
+                      [(ngModel)]="emailOrPhoneNumberText" 
+                      fdprocessedid="4scdrn">
                 <label for="emailOrPhoneNumberText">Email address or Phone number</label>
               </div>
             }
             @else
             {
               <div class="form-floating mb-3">
-                <input type="number" class="form-control rounded-3" id="floatingPassword" placeholder="Password" fdprocessedid="f92tbu">
+                <input type="text"
+                 class="form-control rounded-3" 
+                 id="otpText"
+                 name="otpText"
+                 maxlength="4"
+                 placeholder="Password"
+                 [(ngModel)]="otpText"
+                 fdprocessedid="f92tbu">
                 <label for="floatingPassword">One time password</label>
               </div>
             }
