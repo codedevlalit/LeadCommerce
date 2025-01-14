@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { CommonFunctions } from '../../core/utilities/common.functions';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -11,14 +12,29 @@ import { FormsModule } from '@angular/forms';
 })
 export class LoginComponent {
 
+  /**
+   *
+   */
+  constructor(private router: Router) {
+    
+    
+  }
+
   emailOrPhoneNumberText: string = '';
-  otp: string = '';
+  otpText: string = '';
   isOtpvisible: boolean = false;
 
 
 
   onContinueButtonClicked() 
   {
+
+  if(!CommonFunctions.isNullOrUndefinedOrEmpty(this.emailOrPhoneNumberText) &&
+  !CommonFunctions.isNullOrUndefinedOrEmpty(this.otpText))
+  {
+    this.router.navigate(['/home']);  
+  }
+
     debugger; 
     if(CommonFunctions.isNullOrUndefinedOrEmpty(this.emailOrPhoneNumberText))
       {
@@ -33,8 +49,13 @@ export class LoginComponent {
       {
         // Send OTP to phone number
       }
+
+      this.isOtpvisible = true;
+
+      
   }
 
+  
 
 }
 
