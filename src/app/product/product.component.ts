@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { CartService } from '../service/cart.service';
 
 @Component({
   selector: 'app-product',
@@ -12,7 +13,7 @@ export class ProductComponent {
   identification: string = '';
   imageSrc: string | undefined;
 
-    constructor(private route: ActivatedRoute, private router: Router) {
+    constructor(private route: ActivatedRoute, private router: Router, private _cart: CartService) {
   
     }
   
@@ -29,5 +30,13 @@ export class ProductComponent {
   ngDoCheck()
   {
     
+  }
+
+  addToCart(): void {
+    this._cart.addProduct({
+      id: 1,
+      quantity: 1,
+    
+    });
   }
 }
